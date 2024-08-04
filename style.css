@@ -1,0 +1,310 @@
+/* Navbar */
+body {
+  margin: 0; /* remove default margin */
+}
+
+.navbar {
+  background-color: #FFC5C5; /* pink background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* full width */
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+/* Slideshow */
+.alternating-backgrounds {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  animation: alternate-backgrounds 15s infinite;
+}
+
+@keyframes alternate-backgrounds {
+  0% {
+    background-image: url('GBV-blog-1-910x514.png.webp');
+  }
+  50% {
+    background-image: url('gettyimages-1250506269-612x612.jpg');
+  }
+  100% {
+    background-image: url('gettyimages-981619986-612x612.jpg');
+  }
+}
+
+/* What is there? Section */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* fit the screen */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 30%; /* adjust the width of the image */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-content {
+  width: 70%; /* adjust the width of the content */
+  padding: 20px;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif; /* cool font */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-family: 'Lato', sans-serif; /* cool font */
+  font-size: 16px;
+  color: #666;
+}
+
+/* media query to make the card responsive */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card-content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+    
+  /*  <!-- Report Incidents Form -->*/
+  #contact-form {
+    max-width: 80%; /* make the form 80% of the screen width */
+    margin: 40px auto; /* center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .form-group input[type="text"],.form-group input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    width: 100%;
+    height: 150px; /* make the textarea a bit taller */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* make the form responsive */
+  @media (max-width: 768px) {
+    #contact-form {
+      max-width: 90%; /* make the form 90% of the screen width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #contact-form {
+      max-width: 95%; /* make the form 95% of the screen width on very small screens */
+    }
+  }
+  /*--------footer--------*/
+  footer {
+    background-color: #FFC5C5; /* dark background */
+    padding: 20px;
+    color: #fff; /* white text */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* adjust the width to your needs */
+    margin: 0 auto; /* center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px; /* adjust the width to your needs */
+    height: 100px; /* adjust the height to your needs */
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .quicklinks {
+    margin-right: 20px;
+  }
+  
+  .quicklinks h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quicklinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quicklinks li {
+    margin-bottom: 10px;
+  }
+  
+  .quicklinks a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .quicklinks a:hover {
+    color: #ccc;
+  }
+  
+  .copyright {
+    font-size: 18px;
+    color: #666; /* gray text */
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+
+  /* Admin Panel Styles */
+.container {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#incidents-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#incidents-table th, #incidents-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#incidents-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  background-color: #3e8e41;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}

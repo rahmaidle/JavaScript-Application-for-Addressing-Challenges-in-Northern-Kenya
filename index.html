@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBV Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+          <img src="istockphoto-1047561956-612x612.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="btn">Home</a></li>
+          <li><a href="#what-is-there" class="btn">What is there</a></li>
+          <li><a href="#contact-form" class="btn">Report Incidents</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background Images Slideshow -->
+    <div class="alternating-backgrounds"></div>
+
+    <!-- What is there? Section -->
+    <div id="what-is-there" class="card">
+        <img src="istockphoto-1074048180-612x612.jpg" alt="Image" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">What is there?</h2>
+          <p class="card-text">Gender-based violence is a phenomenon deeply rooted in gender inequality, and continues to be one of the most notable human rights violations within all societies. Gender-based violence is violence directed against a person because of their gender. Both women and men experience gender-based violence but the majority of victims are women and girls.Gender-based violence and violence against women are terms that are often used interchangeably as it has been widely acknowledged that most gender-based violence is inflicted on women and girls, by men. However, using the ‘gender-based’ aspect is important as it highlights the fact that many forms of violence against women are rooted in power inequalities between women and men. The terms are used interchangeably throughout EIGE’s work,  reflecting the disproportionate number of these particular crimes against women.</p>
+        </div>
+    </div>
+
+    <!-- Statistic Chart -->
+    <div class="chart-container">
+        <img src="https://eige.europa.eu/sites/default/files/gbv_infographic_final-1.jpg" id="chart" width="90%" height="90%"></canvas>
+    </div>
+
+    <!-- Report Incidents Form -->
+    <form id="contact-form">
+        <h2>Report Incidents</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" id="submit-btn">Send Message</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <img src="istockphoto-1047561956-612x612.jpg" alt="Logo">
+          </div>
+          <div class="quicklinks">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#what-is-there">What is there</a></li>
+              <li><a href="#contact-form">Report Incidents</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2024 Rahma Idle. All rights reserved.</p>
+          </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
